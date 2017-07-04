@@ -4,58 +4,64 @@ html {
   color: white;
 }
 
-.container {
-  width: 960px;
-  display: inline-flex;
+
+#main {
+  display: flex;
+  flex-direction: column;
 }
 
-#header {
+.title {
   background-color: black;
-  width: 100%;
-  height: auto;
   display: inline-flex;
-  justify-content: center;
+  align-items: center;
 }
 
-  #header img {
-    height: 1.5rem;
-    padding-left: 0.5rem;
-    padding-right: 1rem;
-  }
+.title img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
 
-  #header h1 {
-    font-size: 1rem;
-    padding-top: 0.66rem;
-    padding-bottom: 0.66rem;
-  }
+.title h1 {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  font-size: 1rem;
+}
 
-#banner {
-  height: 25rem;
+.newproducts {
   width: 100%;
+  height: 25rem;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.new-products {
-  position: relative;
-  top: 9rem;
+.box {
+  background-color: black;
   width: 20rem;
   height: auto;
-  background-color: black;s
+  position: relative;
+  top: 9rem;
 }
 
-.new-products h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  padding-top: 0.25rem;
-  padding-left: 3rem;
-}
 
-.new-products h4 {
+.box h4 {
+  padding: 2rem 0 0 3rem;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 2rem;
-  padding-left: 3rem;
+}
+
+
+.box h1 {
+  padding: 0.25rem 0 2rem 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+  display: inline-flex;
+  justify-content: space-between;
 }
