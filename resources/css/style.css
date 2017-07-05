@@ -85,7 +85,6 @@ nav {
 .productbox {
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
   min-width: 30%;
   min-height: 30%;
   position: relative;
